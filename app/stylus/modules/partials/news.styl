@@ -1,0 +1,54 @@
+.item-news
+  padding-top 9px
+  display block
+  padding 9px 34px 31px
+  margin-bottom 30px
+  +mobile()
+    padding 9px 20px 31px
+  &:after
+    pseudo(block, absolute)
+    z-index -1
+    bottom 30px
+    left 15px
+    right 15px
+    height 76%
+    background $back-gray2
+    transitions()
+  &:hover
+    &:after
+      background $back-black3
+    .item-news--read
+      visibility visible
+  p
+    margin-bottom 30px
+  &--image
+    width 100%
+    margin-bottom 29px
+    overflow hidden
+    height 210px
+  &--list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    padding 0
+    margin 0
+    li
+      list-style none
+      font-size: .875em
+      line-height: 1.71
+      margin-right 28px
+      color: $text-gray2
+      .fa
+        margin-right 10px
+  &--read
+    text-align right
+    width 100%
+    position relative
+    top -6px
+    color $text-orange
+    visibility hidden
+    .fa
+      position relative
+      margin-left 26px
+      top 5px
+      font-size 26px

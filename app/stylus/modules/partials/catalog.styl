@@ -1,0 +1,46 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.item-catalog
+  padding-bottom 15px
+  margin-bottom 90px
+  display block
+  img
+    margin-bottom 18px
+  &--info
+    padding 0 32px
+    p
+      font-size 1.125em
+  &--price
+    font-weight 500
+    font-size: 1.875em
+    color: $white
+    text-align right
+  &--number
+    display block
+    line-height 2
+  &--order
+    display none
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25
+    letter-spacing: 2.5px;
+    color: $orange
+    border-bottom 2px solid $orange
+    padding-bottom 5px
+  &:after
+    pseudo(block, absolute)
+    bottom 90px
+    right 15px
+    left 15px
+    background $back-gray2
+    height: 184px
+    z-index -1
+    transitions()
+  &:hover
+    &:after
+      background $back-black2
+    .item-catalog--number
+      display none
+    .item-catalog--order
+      display inline-block

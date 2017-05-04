@@ -1,0 +1,34 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* LINKS */
+a
+  text-decoration none
+  color $text-orange
+  transitions()
+  &:hover
+    text-decoration none
+    color $white
+  &:focus
+    text-decoration none
+
+.arrow-down
+  display block
+  width 15px
+  height 35px
+  text-align center
+  margin 55px auto 0
+  &:hover
+    transform translateY(10px)
+
+.link-more
+  display block
+  text-align center
+  font-size 1.125em
+  line-height: 1.33;
+  letter-spacing: 3px
+  .fa
+    position relative
+    margin-left 22px
+    top 6px
+    font-size 30px

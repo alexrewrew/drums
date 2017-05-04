@@ -1,0 +1,61 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* FORMS */
+form
+  display: flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content space-between
+  margin-bottom 110px
+
+/* INPUTS */
+input
+  flex 1 1 48%
+  max-width 48%
+  border solid 4px $back-black
+  background transparent
+  font-size: 1.125em
+  line-height: 1.33;
+  font-weight 300
+  color: $placeholder-color;
+  margin 10px 0 20px
+  padding 9px 38px 15px
+  color $white
+  transitions()
+  +mobile()
+    flex 1 1 100%
+    max-width 100%
+  &:focus
+    border-color $orange
+    outline none
+  +placeholder()
+    color gray
+
+input.empty
+  border-color red
+
+textarea
+  margin 10px 0 20px
+  flex 1 1 100%
+  color $white
+  font-weight 300
+  max-width 100%
+  font-size: 1.125em
+  line-height: 1.33;
+  background transparent
+  padding 9px 38px 15px
+  border solid 4px $back-black
+  resize none
+  min-height 100px
+  transitions()
+  +mobile()
+    min-height 150px
+  &:focus
+    border-color $orange
+    outline none
+
+textarea.empty
+  border-color red
+
+label {}

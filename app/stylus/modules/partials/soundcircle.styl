@@ -1,0 +1,71 @@
+.sound-circle
+  background $back-black3
+  border-radius 50%
+  width 584px
+  height 584px
+  margin 75px auto 103px
+  text-align center
+  position relative
+  +mobile()
+    width 290px
+    height 290px
+    margin 35px auto 60px
+  &--sound
+    position absolute
+    left 32px
+    top calc(50% - 5px)
+    width 22px
+    height 22px
+    cursor pointer
+    +mobile()
+      display none
+  &--play
+    position absolute
+    right 32px
+    top calc(50% - 5px)
+    width 22px
+    height 22px
+    cursor pointer
+    +mobile()
+      display none
+  &--drum
+    position absolute
+    top calc(50% - 211px)
+    left calc(50% - 209px)
+    display block
+    +mobile()
+      width 220px
+      height 220px
+      top calc(50% - 110px)
+      left calc(50% - 110px)
+  &--mask
+    position absolute
+    width 418px
+    height 422px
+    top calc(50% - 211px)
+    left calc(50% - 209px)
+    +mobile()
+      display none
+    &--note
+      position absolute
+      width 115px
+      height 104px
+      cursor pointer
+      opacity 0
+      transitions()
+      &:hover
+        opacity 1
+      img
+        height: 100%
+    &--note.note-1
+      top 71px
+      left 71px
+    &--note.note-2
+      top 68px
+      right 68px
+    &--note.note-3
+      bottom 90px
+      left 82px
+    &--note.note-4
+      bottom 90px
+      right 64px

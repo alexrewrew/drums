@@ -1,0 +1,36 @@
+nav
+    .container.nav-mobile
+        .row
+            .col-6
+                a(href='#' title='')
+                    img(src='img/logo/logo.svg' title='' alt='' onerror="this.src='img/logo/logo.png'")
+            .col-6
+                #nav-icon4
+                    span
+                    span
+                    span
+    .container.nav-display
+        .row.align-items-baseline
+            .col-md-3.col-xl-4
+                ul.menu.left
+                    li
+                        +link2('#', 'о мастерской')
+                    li
+                        +link2('#', 'инструменты')
+                    li
+                        +link2('#', 'блог')
+            .col-md-6.col-xl-4.text-center
+                a(href='#' title='' class='site-logo')
+                    img(src='img/logo/big-logo.svg' title='' alt='' onerror="this.src='img/logo/big-logo.png'")
+            .col-md-3.col-xl-4
+                ul.menu.right
+                    li
+                        +link2('#', 'отзывы')
+                    li
+                        +link2('#', 'контакты')
+                    li
+                        ul
+                            li
+                                a(href='#' title='' class='active') рус
+                            li
+                                +link2('#', 'eng')

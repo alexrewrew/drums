@@ -1,0 +1,220 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Инопланетная Мастерская - Главная страница
+
+block content
+
+    header
+        .container
+            .row.justify-content-center
+                .col-lg-8.col-xl-7
+                    .sound-circle
+                        .sound-circle--sound
+                            img(src='img/sound1.png' title='')
+                        .sound-circle--play
+                            img(src='img/sound2.png' title='')
+                        img(src='img/index/drum-sound.png' title='' alt='' class='sound-circle--drum')
+                        .sound-circle--mask
+                            .sound-circle--mask--note.note-1
+                                img(src='img/notes/note1.png' title='')
+                            .sound-circle--mask--note.note-2
+                                img(src='img/notes/note2.png' title='')
+                            .sound-circle--mask--note.note-3
+                                img(src='img/notes/note3.png' title='')
+                            .sound-circle--mask--note.note-4
+                                img(src='img/notes/note4.png' title='')
+            .row.justify-content-center
+                .col-md-6
+                    h2 О МАСТЕРСКОЙ
+                    p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    a(href='#instrument' class='arrow-down smooth' title='')
+                        img(src='img/arrow-down.svg' title='')
+    section.container#instrument
+        .row.justify-content-center
+            .col-md-6
+                h2 ИНСТРУМЕНТЫ
+                p Что это за чудо-инструмент ? Как на нем играть и кому он нужено ( коротко ) Его особенности и отличия. Мы с радостью поможем попасть на нашу планету и поможем подобрать инструмент.
+                a(href='#' title='' class='link-more') Выбор инструмента
+                    i.fa.fa-angle-right
+    section.container
+        .row
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item1.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Будда
+                            p Ø 34 см 10 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item2.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Энтерпрайз
+                            p Ø 34 см 9 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item3.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Будда
+                            p Ø 34 см 10 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item1.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Будда
+                            p Ø 34 см 10 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item2.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Энтерпрайз
+                            p Ø 34 см 9 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+            .col-md-6.col-lg-4
+                a(href='#' title='' class='item-catalog')
+                    .row.justify-content-center
+                        .col-lg-9.col-xl-6.text-center
+                            img(src='img/items/item3.png' title='' alt='')
+                    .row.item-catalog--info
+                        .col-6
+                            h5 Будда
+                            p Ø 34 см 10 нот
+                        .col-6
+                            .item-catalog--price
+                                .item-catalog--number $ 127
+                                .item-catalog--order заказать
+
+        .row.justify-content-center
+            .col-md-4
+                a(href='#' class='button' title='') Все товары
+                    i.fa.fa-angle-right
+    section.container
+        .row
+            .col-12
+                h2 Новости
+        .row
+            .col-md-6
+                a(href='#' title='' class='item-news')
+                    .row
+                        .col-12
+                            .item-news--image
+                                img(src='img/news/news-1.png' title='' alt='')
+                            h3 Новость номер 1
+                            p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row
+                        .col-md-6
+                            ul.item-news--list
+                                li 10.02.2017
+                                li
+                                    i.fa.fa-eye
+                                    | 140
+                        .col-md-6
+                            .item-news--read читать больше
+                                i.fa.fa-angle-right
+            .col-md-6
+                a(href='#' title='' class='item-news')
+                    .row
+                        .col-12
+                            .item-news--image
+                                img(src='img/news/news-2.png' title='' alt='')
+                            h3 Новость номер 2
+                            p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row
+                        .col-md-6
+                            ul.item-news--list
+                                li 10.02.2017
+                                li
+                                    i.fa.fa-eye
+                                    | 140
+                        .col-md-6
+                            .item-news--read читать больше
+                                i.fa.fa-angle-right
+        .row.justify-content-center
+            .col-md-6
+                a(href='#' class='button transparent' title='') Все новости
+                    i.fa.fa-angle-right
+    section.container
+        .row
+            .col-12
+                h2 Отзывы
+        .row
+            .col-md-6
+                a(href='#' title='' class='item-comment')
+                    .row.item-comment--top
+                        .col-12
+                            h4 Степан Иванов
+                            .item-comment--text
+                                p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                                p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row.item-comment--bottom
+                        .col-md-6
+                            ul.item-comment--list
+                                li 21.06.2017
+                        .col-md-6
+                            .item-comment--read читать больше
+                                i.fa.fa-angle-down
+            .col-md-6
+                a(href='#' title='' class='item-comment')
+                    .row.item-comment--top
+                        .col-12
+                            h4 Степан Иванов
+                            .item-comment--text
+                                p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                                p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row.item-comment--bottom
+                        .col-md-6
+                            ul.item-comment--list
+                                li 21.06.2017
+                        .col-md-6
+                            .item-comment--read читать больше
+                                i.fa.fa-angle-down
+        .row.justify-content-center
+            .col-md-6
+                a(href='#' class='button transparent' title='') Все отзывы
+                    i.fa.fa-angle-right
+    section.container
+        .row
+            .col-12
+                h2 Остались вопросы?
+        .row.justify-content-center
+            .col-md-8
+                form
+                    input(type='text' placeholder='Введите имя' required)
+                    input(type='mail' placeholder='E-mail' required)
+                    textarea(placeholder='Ваш вопрос' required)
+                    button(class='button' type='submit') Отправить

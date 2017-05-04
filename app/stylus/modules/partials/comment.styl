@@ -1,0 +1,63 @@
+.item-comment
+  display block
+  background $back-gray2
+  padding 32px 34px 31px
+  position relative
+  margin-top 9px
+  transitions()
+  margin-bottom 30px
+  +mobile()
+    padding 32px 20px 31px
+  &:hover
+    background $back-black3
+  &--text
+    height 95px
+    overflow hidden
+    transitions()
+    p
+      line-height 1.5
+  &--bottom
+    position absolute
+    bottom 0
+    left 34px
+    right 34px
+    padding-bottom 33px
+    +mobile()
+      padding-bottom 15px
+      .col-md-6
+        padding 0
+
+  &--top
+    margin-bottom 55px
+  &--read
+    text-align right
+    color $text-orange
+    .fa
+      font-size 26px
+      margin-left 25px
+      position relative
+      top 4px
+      transitions()
+      +mobile()
+        margin-left 10px
+  &--list
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    padding 0
+    margin 0
+    li
+      list-style none
+      font-size: .875em
+      line-height: 1.71
+      margin-right 28px
+      color: $text-gray2
+      .fa
+        margin-right 10px
+
+.item-comment.open
+  .item-comment--text
+    height 200px
+  .item-comment--read
+    .fa
+      transform rotate(180deg)
