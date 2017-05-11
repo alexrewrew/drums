@@ -45,18 +45,89 @@
     .item-catalog--order
       display inline-block
 
+.catalog
+  border-radius 0
+  padding-top 40px
+  text-align center
+  padding-bottom 0px
+  margin-bottom 243px
+  max-height 395px
+  +portrait()
+    max-height unset
+  +mobile()
+    max-height unset
+    margin-bottom 120px
+
+.catalog-nav
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content space-between
+  padding 0
+  +mobile()
+    flex-wrap wrap
+  li
+    list-style none
+    flex 1 1 calc(25% - 20px)
+    max-width calc(25% - 20px)
+    +mobile()
+      flex: 1 1 100%
+      max-width 100%
+    margin-bottom 15px
+    a
+      display block
+      text-align center
+      font-weight 600
+      font-size: 1.25em
+      line-height: 1.2
+      letter-spacing: 2.5px
+      color: $back-black2
+      background $text-gray4
+      padding 16px 0 17px
+      border-bottom 4px solid transparent
+      &:hover
+        background $text-gray5
+        border-bottom 4px solid $white
+    a.active
+      background $text-gray5
+      color $white
+
+.catalog-sizes-drum
+  text-align center
+  position relative
+  bottom -75px
+  +mobile()
+    position static
+
 .catalog-size
+  +mobile()
+    margin-bottom 15px
   .catalog-back
     opacity 0
     position absolute
     bottom 0
+    transitions()
+    +tablet()
+      opacity 1
+
+  .cs1
+    left calc(50% - 115px)
+  .cs2
+    left calc(50% - 97.5px)
+  .cs3
+    left calc(50% - 80px)
   .catalog-front
     opacity 1
+    transitions()
+    +tablet()
+      opacity 0
   &:hover
     .catalog-back
       opacity 1
     .catalog-front
       opacity 0
+    .sizes
+      color $back-black2
 
 .sizes
   position absolute
@@ -64,5 +135,18 @@
   bottom 0
   max-width 70px
   text-align left
-  color $back-black2
+  color transparent
   font-weight 500
+  transitions()
+  +mobile()
+    color $white
+    position relative
+    text-align center
+    max-width unset
+    margin-bottom 10px
+    margin-top 20px
+
+  +tablet()
+    color $back-black2
+  +portrait()
+    color $back-black2

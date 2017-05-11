@@ -1,0 +1,23 @@
+.remodal
+  background $back-black2
+  width 100%
+  max-width 1170px
+  padding 70px 0 50px
+  +tablet()
+    max-width 960px
+  +portrait()
+    max-width 720px
+  form
+    margin-bottom 0
+  .remodal-close
+    right 30px
+    top 30px
+    left auto
+    color $white
+    &:before
+      font-size 60px
+    &:hover
+      color $text-orange
+
+.hidden
+  display none

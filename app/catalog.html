@@ -72,7 +72,7 @@
         </div>
       </div>
       <div class="container nav-display">
-        <div class="row align-items-baseline">
+        <div class="row align-items-flex-end">
           <div class="col-md-3 col-xl-4">
             <ul class="menu left">
               <li><a href="#" title="">о мастерской</a>
@@ -104,7 +104,7 @@
     </nav>
     <main>
       <!--include ../partials/_header.pug-->
-      <header class="about">
+      <header class="catalog">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12">
@@ -114,45 +114,241 @@
               <p>Что это за чудо-инструмент? Как на нем играть и кому он нужено (коротко) Его особенности и отличия. Мы с радостью поможем попасть на нашу планету и поможем подобрать инструмент.</p>
             </div>
           </div>
+          <div class="row justify-content-center align-items-baseline catalog-sizes-drum">
+            <div class="col-md-6 col-lg-4">
+              <div class="catalog-size">
+                <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes1.png" title="" alt=""><img class="catalog-back cs1" src="img/catalog/sizes1h.png" title="" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="catalog-size cs2">
+                <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes3.png" title="" alt=""><img class="catalog-back cs2" src="img/catalog/sizes3.png" title="" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="catalog-size cs2">
+                <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes2.png" title="" alt=""><img class="catalog-back cs3" src="img/catalog/sizes2h.png" title="" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <section class="container">
-        <div class="row justify-content-center align-items-flex-end text-center">
-          <div class="col-md-4">
-            <div class="catalog-size">
-              <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes1.png" title="" alt=""><img class="catalog-back" src="img/catalog/sizes1h.png" title="" alt="">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog-size">
-              <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes3.png" title="" alt=""><img class="catalog-back" src="img/catalog/sizes3h.png" title="" alt="">
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="catalog-size">
-              <p class="sizes">Ø 34 см 9 нот</p><img class="catalog-front" src="img/catalog/sizes2.png" title="" alt=""><img class="catalog-back" src="img/catalog/sizes2h.png" title="" alt="">
-            </div>
-          </div>
+        <div class="row">
           <div class="col-12">
-            <h2>О МАСТЕРСКОЙ</h2>
+            <ul class="catalog-nav">
+              <li><a href="" title="">Все</a></li>
+              <li><a href="" title="">Большые</a></li>
+              <li><a href="" title="">Средние</a></li>
+              <li><a href="" title="">Маленькие</a></li>
+            </ul>
           </div>
-          <div class="col-md-8 col-lg-6">
-            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню</p>
-          </div>
-          <div class="col-md-10 col-lg-8"><img class="img-responsive about-img-small" src="img/about/about2.png" title="" alt=""></div>
-          <div class="col-12">
-            <h2>УНИКАЛЬНОСТЬ РАБОТЫ</h2>
-          </div>
-          <div class="col-md-8 col-lg-6">
-            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню</p>
-          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item1.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item2.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Энтерпрайз</h5>
+                  <p>Ø 34 см 9 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item3.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item1.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item2.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Энтерпрайз</h5>
+                  <p>Ø 34 см 9 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item3.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item1.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item2.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Энтерпрайз</h5>
+                  <p>Ø 34 см 9 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item3.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item1.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item2.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Энтерпрайз</h5>
+                  <p>Ø 34 см 9 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
+          <div class="col-md-6 col-lg-4"><a class="item-catalog" href="#" title="">
+              <div class="row justify-content-center">
+                <div class="col-lg-9 col-xl-6 text-center"><img src="img/items/item3.png" title="" alt=""></div>
+              </div>
+              <div class="row item-catalog--info">
+                <div class="col-6">
+                  <h5>Будда</h5>
+                  <p>Ø 34 см 10 нот</p>
+                </div>
+                <div class="col-6">
+                  <div class="item-catalog--price">
+                    <div class="item-catalog--number">$ 127</div>
+                    <div class="item-catalog--order">заказать</div>
+                  </div>
+                </div>
+              </div></a></div>
         </div>
         <div class="row spacer-30"></div>
       </section>
       <section class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-12">
-            <h2>Остались вопросы?</h2>
+            <h2>Индивидуальный заказ</h2>
+          </div>
+          <div class="col-md-6 text-center">
+            <p>Так же мы готовы изготовить для тебя инструмент под индивидуальные требования, с уникальным рисунком, обработкой и цветом. Для этого cвяжись с нами по телефону или напиши.</p>
           </div>
         </div>
         <div class="row justify-content-center">

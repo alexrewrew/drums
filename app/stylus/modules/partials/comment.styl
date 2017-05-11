@@ -61,3 +61,24 @@
   .item-comment--read
     .fa
       transform rotate(180deg)
+
+.comment
+  min-height 330px
+  max-height unset
+  margin-bottom 155px
+  +mobile()
+    margin-bottom 100px
+
+.comment-button
+  position relative
+  bottom -83px
+  padding-top 18px
+  +portrait()
+    bottom -43px
+  +tablet()
+    bottom -43px
+  +mobile()
+    position static
+  margin-bottom 50px
+  &:hover
+    background $text-gray4

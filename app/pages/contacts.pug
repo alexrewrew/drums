@@ -1,0 +1,32 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Инопланетная Мастерская - Контакты
+
+block content
+
+    header.about
+        .container
+            .row
+                .col-12
+                    h1 КОНТАКТЫ
+                .col-md-8.col-lg-6.text-center
+                    p Мы будем рады встречам и общению с вами. Вы можете прийти к нам в мастерскую и попробовать инструмент. Для записи обращайтесь по телефону.
+    section.container
+        .row.justify-content-center
+            .col-md-11
+                img(src='img/about/about1.png' title='' alt='' class='img-responsive about-img-big')
+            .col-12
+                h2 О МАСТЕРСКОЙ
+    section.container
+        .row
+            .col-12
+                h2 Остались вопросы?
+        .row.justify-content-center
+            .col-md-8
+                form
+                    input(type='text' placeholder='Введите имя' required)
+                    input(type='mail' placeholder='E-mail' required)
+                    textarea(placeholder='Ваш вопрос' required)
+                    button(class='button' type='submit') Отправить
