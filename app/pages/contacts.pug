@@ -6,23 +6,53 @@ block title
 
 block content
 
-    header.about
+    header.about.contacts
         .container
-            .row
+            .row.justify-content-center
                 .col-12
                     h1 КОНТАКТЫ
                 .col-md-8.col-lg-6.text-center
                     p Мы будем рады встречам и общению с вами. Вы можете прийти к нам в мастерскую и попробовать инструмент. Для записи обращайтесь по телефону.
+            .row.spacer-100
+            .row.justify-content-center
+                .col-md-6.col-lg-5.col-xl-4.text-left
+                    h3 Свяжись
+                    p
+                        | Директор:
+                        a(href='tel:+(380)0509628252' title='') +(380) 050 962 82 52 (Антон)
+                        br
+                        | Для заказов:
+                        a(href='tel:+(380)0957057645' title='') +(380) 095 705 76 45 (Ева)
+                        br
+                        | E-mail:
+                        a(href='mailto:ino_masterskaya@gmail.com' title='') ino_masterskaya@gmail.com
+                    ul.social-links
+                        li
+                            a(href='#' title='Facebook')
+                                i.fa.fa-facebook-official
+                        li
+                            a(href='#' title='VKontakte')
+                                i.fa.fa-vk
+                        li
+                            a(href='#' title='Instagram')
+                                i.fa.fa-instagram
+
+                .col-md-6.col-lg-5.col-xl-4.text-left
+                    h3 Адрес
+                    p
+                        | Ул. Басейная 123, тц PROMENADA,
+                        br
+                        | м. Лукьяновка Киев, Украина
+                        br
+                        | Пн-Пт с 9:00 - 18:00
+
+
+
     section.container
-        .row.justify-content-center
-            .col-md-11
-                img(src='img/about/about1.png' title='' alt='' class='img-responsive about-img-big')
-            .col-12
-                h2 О МАСТЕРСКОЙ
-    section.container
+        .row.spacer-120
         .row
             .col-12
-                h2 Остались вопросы?
+                h2 Пиши нам
         .row.justify-content-center
             .col-md-8
                 form

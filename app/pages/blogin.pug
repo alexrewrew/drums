@@ -1,0 +1,98 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Инопланетная Мастерская - Новость
+
+block content
+
+    header.about.blogin
+        .container
+            .row
+                .col-12
+                    h2 Новость номер 1
+    article.container
+        .row.justify-content-center
+            .col-md-11.blog-head-container
+                .blog-head
+                    ul.item-news--list
+                        li 10.02.2017
+                        li
+                            i.fa.fa-eye
+                            | 140
+                    .blog-img
+                        img(src='img/news/blog.png' title='' alt='' class='img-responsive')
+            .col-md-10.col-lg-8
+                p
+                    | Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною
+                    |
+                    a(href='' title='' class='link-text') "рибою"
+                    |  аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
+                .img-gallery
+                    img(src='img/news/blog-pic1.png' title='' alt='')
+                    img(src='img/news/blog-pic2.png' title='' alt='')
+                h3 Заголовок
+                p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в
+                ul.unordered
+                    li  Lorem Ipsum;
+                    li  це текст-"риба;
+                    li  використовується в друкарстві та дизайні;
+                    li  з XVI сторіччя;
+                    li  Lorem Ipsum;
+                    li  це текст-"риба;
+                    li  використовується в друкарстві та дизайні;
+                    li  з XVI сторіччя;
+                h3 Нумерованный список
+                ol.ordered
+                    li  Lorem Ipsum;
+                    li  це текст-"риба;
+                    li  використовується в друкарстві та дизайні;
+                    li  з XVI сторіччя;
+                img(src='img/news/blog-pic3.png' title='' alt='' class='img-responsive')
+                blockquote
+                    | Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною
+                p
+                    | Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню
+        .row.spacer-30
+    .container
+        .row
+            .col-12
+                h2 Следующие новости
+        .row
+            .col-md-6
+                a(href='#' title='' class='item-news')
+                    .row
+                        .col-12
+                            .item-news--image
+                                img(src='img/news/news-1.png' title='' alt='')
+                            h3 Новость номер 1
+                            p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row
+                        .col-md-6
+                            ul.item-news--list
+                                li 10.02.2017
+                                li
+                                    i.fa.fa-eye
+                                    | 140
+                        .col-md-6
+                            .item-news--read читать больше
+                                i.fa.fa-angle-right
+            .col-md-6
+                a(href='#' title='' class='item-news')
+                    .row
+                        .col-12
+                            .item-news--image
+                                img(src='img/news/news-2.png' title='' alt='')
+                            h3 Новость номер 2
+                            p Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                    .row
+                        .col-md-6
+                            ul.item-news--list
+                                li 10.02.2017
+                                li
+                                    i.fa.fa-eye
+                                    | 140
+                        .col-md-6
+                            .item-news--read читать больше
+                                i.fa.fa-angle-right
+        .row.spacer-30

@@ -67,3 +67,37 @@ p
 
 .text-center
   text-align center
+
+.text-left
+  text-align left
+
+blockquote
+  color $white
+  line-height: 1.44;
+  font-size 1.125em
+  position relative
+  min-height 112px
+  padding 0 13%
+  +mobile()
+    margin-bottom 80px
+  &:before
+    display block
+    position absolute
+    content '\201c'
+    font-size 6em
+    color $text-orange
+    top -40px
+    left 0
+    line-height normal
+  &:after
+    display block
+    position absolute
+    content '\201d'
+    font-size 6em
+    color $text-orange
+    bottom -40px
+    right 0
+    line-height normal
+    +mobile()
+      bottom: -90px;
+

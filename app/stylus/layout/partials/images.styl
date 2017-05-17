@@ -6,3 +6,17 @@ img {}
 
 .img-responsive
   width 100%
+
+.img-gallery
+  display flex
+  flex-wrap wrap
+  flex-direction row
+  justify-content space-between
+  margin-bottom 40px
+  img
+    flex 1 1 48%
+    max-width 48%
+    margin-bottom 30px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%

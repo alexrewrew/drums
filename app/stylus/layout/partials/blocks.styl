@@ -5,7 +5,46 @@
 section
   margin-bottom 80px
 
-article {}
+article
+  border-bottom 3px solid $back-gray2
+  margin-bottom 55px
+  p
+    margin-bottom 80px
+  .img-responsive
+    margin-bottom 80px
+  ul.unordered
+    margin-bottom 80px
+    columns: 2;
+    padding 0
+    +mobile()
+      columns 1
+    li
+      padding-left: 20px;
+      list-style none
+      position relative
+      font(1em, $white, 100, 1.44)
+      &:before
+        pseudo(block, absolute)
+        width 10px
+        height 2px
+        top 10px
+        background $text-orange
+        left 0
+
+  ol.ordered
+    margin-bottom 80px
+    padding 0
+    list-style-type none
+    li
+      font(1em, $white, 100, 1.44)
+      counter-increment: step-counter;
+      &:before
+        content: counter(step-counter);
+        margin-right: 5px;
+        font-size: 1em;
+        color: $text-orange;
+        border-radius: 3px;
+
 
 .justify-content-center
   justify-content center
@@ -27,3 +66,11 @@ article {}
 .spacer-100
   width 100%
   height 100px
+
+.spacer-110
+  width 100%
+  height 110px
+
+.spacer-120
+  width 100%
+  height 120px
