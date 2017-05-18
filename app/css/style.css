@@ -6408,3 +6408,36 @@ button.button {
 	min-height: 180px;
 	width: auto;
 }
+.product {
+	text-align: left;
+}
+.product h1 {
+	font-size: 1.375em;
+	letter-spacing: 9.2px;
+	text-align: left;
+}
+.product h1:after {
+	left: 0;
+}
+.product .price {
+	font-size: 1.875em;
+	margin-bottom: 40px;
+}
+.product .link-text {
+	font-size: 1.125em;
+}
+.product .sound-circle {
+	width: 360px;
+	height: 360px;
+	margin-top: 0;
+}
+.product .sound-circle .sound-circle--drum {
+	width: 256px;
+	height: 256px;
+	top: -webkit-calc(50% - 128px);
+	top:    -moz-calc(50% - 128px);
+	top:         calc(50% - 128px);
+	left: -webkit-calc(50% - 128px);
+	left:    -moz-calc(50% - 128px);
+	left:         calc(50% - 128px);
+}
