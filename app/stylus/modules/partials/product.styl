@@ -1,22 +1,78 @@
 .product
   text-align left
+  padding-bottom 0
+  margin-bottom 155px
+  .spacer-20, .spacer-40
+    +portrait()
+      display none
+    +mobile()
+      display none
+  .button
+    position relative
+    bottom -43px
+    padding 18px 0 23px;
+    &:hover
+      background $white
+      color $back-black
   h1
     font-size: 1.375em
     letter-spacing: 9.2px;
     text-align left
+    padding-bottom 22px
     &:after
       left 0
+  h3
+    margin-bottom 8px
+  p
+    line-height: 1.32;
   .price
     font-size 1.875em
     margin-bottom 40px
   .link-text
     font-size 1.125em
+    margin: 32px 0;
+    display: block;
   .sound-circle
     width 360px
     height 360px
     margin-top 0
+    margin-bottom 26px
+    +portrait()
+      width 330px
+      height 330px
+    +mobile()
+      width 290px
+      height 290px
     .sound-circle--drum
       width 256px
       height  256px
       top calc(50% - 128px);
       left calc(50% - 128px);
+      +portrait()
+        width 226px
+        height 226px
+        top calc(50% - 113px);
+        left calc(50% - 113px);
+      +mobile()
+        width 216px
+        height 216px
+        top calc(50% - 108px);
+        left calc(50% - 108px);
+    .sound-circle--play
+      width auto
+      height auto
+      top: calc(50% - 28px);
+      right 23px
+      +mobile()
+        right 13px
+        display block
+      .sound-circle--colors
+        display flex
+        flex-wrap wrap
+        flex-direction column
+        li
+          list-style none
+          cursor pointer
+          margin-bottom 3px
+          &:hover
+              transform scale(2)

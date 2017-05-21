@@ -9,7 +9,8 @@ block content
     header.about.product
         .container
             .row.justify-content-center
-                .col-md-3
+                .col-md-6.col-lg-3
+                    span.spacer-20
                     h1 ИНСТРУМЕНТ «БУДДА»
                     h3 Средний
                     p Диаметр: 34 сантиметра
@@ -22,12 +23,19 @@ block content
                     p 10 симметрично расположенных круглых лепестка
                         br
                         | 10 нот
-                .col-md-4
+                .col-md-6.col-lg-5.col-xl-4
                     .sound-circle
                         .sound-circle--play
-                            img(src='img/sound2.png' title='')
+                            ul.sound-circle--colors
+                                li
+                                        img(src='img/colors/color1.png' title='' class='color')
+                                li
+                                        img(src='img/colors/color2.png' title='' class='color')
+                                li
+                                        img(src='img/colors/color3.png' title='' class='color')
                         img(src='img/index/drum-sound.png' title='' alt='' class='sound-circle--drum')
-                .col-md-3
+                .col-lg-3
+                        span.spacer-40
                         h3.price $127
                         h3 Цвета
                         p Черный ( Антикорозийная защита)
@@ -40,25 +48,17 @@ block content
                     a(href='' title='' class='button') Заказать
     section.container
         .row.justify-content-center
-            .col-md-11
-                img(src='img/about/about1.png' title='' alt='' class='img-responsive about-img-big')
             .col-12
-                h2 О МАСТЕРСКОЙ
+                h2 ПОДРОБНОСТИ ЗАКАЗА
             .col-md-8.col-lg-6
                 p
-                    | Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню
-            .col-md-10.col-lg-8
-                img(src='img/about/about2.png' title='' alt='' class='img-responsive about-img-small')
-            .col-12
-                h2 УНИКАЛЬНОСТЬ РАБОТЫ
-            .col-md-8.col-lg-6
-                p
-                    | Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню
+                    | Гарантия 12 месяцев. Цена указана за базовую модель без рисунка и антикорозийного покрытия. Возможны варианты с различными рисунками. Заказать свой рисунок можно, написав при заказе комментарий, что вы хотите рисунок. Мы свяжемся с вами для уточнения деталей. Для индивидуального заказа перейдите к форме ниже.
         .row.spacer-30
     section.container
-        .row
-            .col-12
-                h2 Остались вопросы?
+        .row.justify-content-center
+            .col-md-8.col-lg-6
+                h2 ИНДИВИДУАЛЬНЫЙ ЗАКАЗ
+                p.text-center Так же мы готовы изготовить для тебя инструмент под индивидуальные требования, с уникальным рисунком, обработкой и цветом. Для этого cвяжись с нами по телефону или напиши.
         .row.justify-content-center
             .col-md-8
                 form
