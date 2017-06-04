@@ -14,9 +14,10 @@ block content
                         .sound-circle--sound
                             img(src='img/sound1.png' title='')
                         .sound-circle--play
-                            img(src='img/sound2.png' title='')
+                            img(src='img/sound2.png' title='' class='visible-block')
+                            img(src='img/nosound.png' title='' class='hidden-block')
                         img(src='img/index/drum-sound.png' title='' alt='' class='sound-circle--drum')
-                        .sound-circle--mask
+                        .sound-circle--mask.unmuted
                             .sound-circle--mask--note.note-1
                                 img(src='img/notes/note1.png' title='')
                                 audio#audio1

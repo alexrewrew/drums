@@ -5976,6 +5976,13 @@ button.button {
 	width: 22px;
 	height: 22px;
 	cursor: pointer;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.sound-circle--sound:hover {
+	opacity: .8;
 }
 @media (max-width: 767px) {
 	.sound-circle--sound {
@@ -5991,6 +5998,13 @@ button.button {
 	width: 22px;
 	height: 22px;
 	cursor: pointer;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.sound-circle--play:hover {
+	opacity: .8;
 }
 @media (max-width: 767px) {
 	.sound-circle--play {
@@ -6067,6 +6081,12 @@ button.button {
 .sound-circle--mask--note.note-4 {
 	bottom: 90px;
 	right: 64px;
+}
+.visible-block {
+	display: block;
+}
+.hidden-block {
+	display: none;
 }
 .item-news {
 	padding-top: 9px;
