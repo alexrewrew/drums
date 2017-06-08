@@ -4842,10 +4842,11 @@ a {
 }
 a:hover {
 	text-decoration: none;
-	color: #fff;
+	color: #ab5438;
 }
 a:focus {
 	text-decoration: none;
+	color: #ab5438;
 }
 .arrow-down {
 	display: block;
@@ -4871,8 +4872,21 @@ a:focus {
 .link-more .fa {
 	position: relative;
 	margin-left: 22px;
-	top: 6px;
+	top: 5px;
 	font-size: 30px;
+	-webkit-transition: .4s -webkit-transform ease;
+	        transition: .4s -webkit-transform ease;
+	     -o-transition: .4s -o-transform ease;
+	   -moz-transition: .4s transform ease, .4s -moz-transform ease;
+	        transition: .4s transform ease;
+	        transition: .4s transform ease, .4s -webkit-transform ease, .4s -moz-transform ease, .4s -o-transform ease;
+}
+.link-more:hover .fa {
+	-webkit-transform: translateX(25px);
+	   -moz-transform: translateX(25px);
+	    -ms-transform: translateX(25px);
+	     -o-transform: translateX(25px);
+	        transform: translateX(25px);
 }
 .link-text {
 	text-decoration: underline;
@@ -5020,6 +5034,14 @@ header {
 		-webkit-border-radius: 0;
 		        border-radius: 0;
 	}
+}
+.header-index {
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	background: url('../img/Oval.png') no-repeat;
+	background-position: center bottom;
+	-o-background-size: cover;
+	   background-size: cover;
 }
 nav {
 	background: #2c2c2c;
@@ -5354,6 +5376,10 @@ footer p {
 	line-height: 1.2;
 	color: #a5644a;
 	font-size: 1.25em;
+	border-bottom: 2px solid transparent;
+}
+.links-contacts li a:hover {
+	border-bottom: 2px solid #a5644a;
 }
 .social-links {
 	display: -webkit-box;
@@ -5566,21 +5592,34 @@ button.button {
 	border: none;
 }
 .button:hover {
-	background: #fff;
+	background: #ab5438;
 	color: #2c2c2c;
 }
 .button .fa {
 	position: relative;
 	margin-left: 22px;
-	top: 5px;
+	top: 4px;
 	font-size: 30px;
+	-webkit-transition: .4s -webkit-transform ease;
+	        transition: .4s -webkit-transform ease;
+	     -o-transition: .4s -o-transform ease;
+	   -moz-transition: .4s transform ease, .4s -moz-transform ease;
+	        transition: .4s transform ease;
+	        transition: .4s transform ease, .4s -webkit-transform ease, .4s -moz-transform ease, .4s -o-transform ease;
+}
+.button:hover .fa {
+	-webkit-transform: translateX(25px);
+	   -moz-transform: translateX(25px);
+	    -ms-transform: translateX(25px);
+	     -o-transform: translateX(25px);
+	        transform: translateX(25px);
 }
 .button.transparent {
 	color: #a5644a;
 	background: transparent;
 }
 .button.transparent:hover {
-	color: #fff;
+	color: #ab5438;
 }
 .img-responsive {
 	width: 100%;
@@ -5852,6 +5891,9 @@ button.button {
 	background: #666;
 	color: #fff;
 }
+.catalog-nav li a.active:hover {
+	border-bottom-color: #666;
+}
 .catalog-sizes-drum {
 	text-align: center;
 	position: relative;
@@ -5976,13 +6018,9 @@ button.button {
 	width: 22px;
 	height: 22px;
 	cursor: pointer;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	   -moz-transition: all .4s ease;
-	        transition: all .4s ease;
 }
-.sound-circle--sound:hover {
-	opacity: .8;
+.sound-circle--sound:hover svg g {
+	fill: #ae5438;
 }
 @media (max-width: 767px) {
 	.sound-circle--sound {
@@ -5998,13 +6036,9 @@ button.button {
 	width: 22px;
 	height: 22px;
 	cursor: pointer;
-	-webkit-transition: all .4s ease;
-	     -o-transition: all .4s ease;
-	   -moz-transition: all .4s ease;
-	        transition: all .4s ease;
 }
-.sound-circle--play:hover {
-	opacity: .8;
+.sound-circle--play:hover svg g {
+	fill: #ae5438;
 }
 @media (max-width: 767px) {
 	.sound-circle--play {
@@ -6088,11 +6122,18 @@ button.button {
 .hidden-block {
 	display: none;
 }
+.news-index .item-news {
+	margin-bottom: 30px;
+}
+.news-index .item-news:after {
+	bottom: 30px;
+	height: 76%;
+}
 .item-news {
 	padding-top: 9px;
 	display: block;
 	padding: 9px 34px 31px;
-	margin-bottom: 30px;
+	margin-bottom: 120px;
 }
 @media (max-width: 767px) {
 	.item-news {
@@ -6104,10 +6145,10 @@ button.button {
 	display: block;
 	position: absolute;
 	z-index: -1;
-	bottom: 30px;
+	bottom: 120px;
 	left: 15px;
 	right: 15px;
-	height: 76%;
+	height: 61%;
 	background: #313131;
 	-webkit-transition: all .4s ease;
 	     -o-transition: all .4s ease;

@@ -29,19 +29,23 @@ button.button
   margin-bottom 10px
   border none
   &:hover
-    background $white
+    background $orange2
     color $back-black
   .fa
     position relative
     margin-left 22px
-    top 5px
+    top 4px
     font-size 30px
+    transition .4s transform ease
+  &:hover
+    .fa
+      transform translateX(25px)
 
 .button.transparent
   color $text-orange
   background transparent
   &:hover
-    color $white
+    color $orange2
 
 
 

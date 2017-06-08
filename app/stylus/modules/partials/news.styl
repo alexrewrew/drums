@@ -1,17 +1,26 @@
+.news-index
+  .item-news
+    margin-bottom 30px
+    &:after
+      bottom 30px
+      height 76%
+
 .item-news
   padding-top 9px
   display block
   padding 9px 34px 31px
-  margin-bottom 30px
+  //margin-bottom 30px
+  margin-bottom: 120px;
   +mobile()
     padding 9px 20px 31px
   &:after
     pseudo(block, absolute)
     z-index -1
-    bottom 30px
+    //bottom 30px
+    bottom 120px
     left 15px
     right 15px
-    height 76%
+    height 61%
     background $back-gray2
     transitions()
   &:hover

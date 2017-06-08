@@ -11029,7 +11029,7 @@ $(document).ready(function () {
 
     $('.sound-circle--play').click(function () {
         $('.sound-circle--mask').toggleClass('unmuted');
-        $('.sound-circle--play img').toggleClass('hidden-block');
+        $('.sound-circle--play svg').toggleClass('hidden-block');
     });
 
     var sound1 = $("#audio1")[0];

@@ -8,9 +8,10 @@ a
   transitions()
   &:hover
     text-decoration none
-    color $white
+    color $orange2
   &:focus
     text-decoration none
+    color $orange2
 
 .arrow-down
   display block
@@ -30,8 +31,12 @@ a
   .fa
     position relative
     margin-left 22px
-    top 6px
+    top 5px
     font-size 30px
+    transition .4s transform ease
+  &:hover
+    .fa
+      transform translateX(25px)
 
 .link-text
   text-decoration underline
