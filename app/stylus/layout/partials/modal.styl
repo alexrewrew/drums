@@ -18,6 +18,23 @@
       font-size 60px
     &:hover
       color $text-orange
+  //new
+  .sound-circle--colors
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    padding 0
+    margin 0 0 15px
+    li
+      list-style none
+      margin-right 9px
+      img
+        border 2px solid transparent
+        border-radius 50%
+        transitions()
+        cursor pointer
+        &:hover
+          border-color $white
 
 .hidden
   display none

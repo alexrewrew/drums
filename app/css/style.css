@@ -4780,6 +4780,11 @@ h5 {
 	font-weight: 300;
 	margin-bottom: 0;
 }
+h6 {
+	font-size: 1.375em;
+	color: #444;
+	font-weight: 600;
+}
 p {
 	font-family: 'MuseoSansCyrl', sans-serif;
 	font-size: 1em;
@@ -5738,6 +5743,42 @@ button.button {
 }
 .remodal .remodal-close:hover {
 	color: #a5644a;
+}
+.remodal .sound-circle--colors {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display:    -moz-box;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	   -moz-box-orient: horizontal;
+	   -moz-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+	padding: 0;
+	margin: 0 0 15px;
+}
+.remodal .sound-circle--colors li {
+	list-style: none;
+	margin-right: 9px;
+}
+.remodal .sound-circle--colors li img {
+	border: 2px solid transparent;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+	-webkit-transition: all .4s ease;
+	     -o-transition: all .4s ease;
+	   -moz-transition: all .4s ease;
+	        transition: all .4s ease;
+	cursor: pointer;
+}
+.remodal .sound-circle--colors li img:hover {
+	border-color: #fff;
 }
 .hidden {
 	display: none;

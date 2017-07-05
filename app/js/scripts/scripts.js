@@ -107,11 +107,10 @@ $(document).ready(function () {
         }
     });
     $(".sound-circle--sound").click(function () {
-        if ($(this).parent().hasClass("unmuted")) {
             sound11.pause();
             sound11.currentTime = 0;
             sound11.play();
-        }
+
     });
 
 

@@ -45,7 +45,7 @@ block content
                             | Золотой
                         a(href='' title='' class='link-text') Прослушать звукоряд
                 .col-md-4
-                    a(href='' title='' class='button') Заказать
+                    a(href='#modal2' title='' class='button') Заказать
     section.container
         .row.justify-content-center
             .col-12
@@ -66,3 +66,38 @@ block content
                     input(type='mail' placeholder='E-mail' required)
                     textarea(placeholder='Ваш вопрос' required)
                     button(class='button' type='submit') Отправить
+    //new
+    .remodal(data-remodal-id='modal2')
+        button.remodal-close(data-remodal-action='close')
+        .container
+
+            .row.justify-content-center
+                .col-md-10.col-lg-8
+                    h2.white Заполните форму заказа
+            .row.justify-content-center.text-left
+                .col-md-5.col-lg-4
+                    h6 Инструмент «Будда»
+                    p Ø 34 см 10 нот
+                .col-md-3.col-lg-2
+                    ul.sound-circle--colors
+                        li
+                            img(src='img/colors/color1.png' title='' class='color')
+                        li
+                            img(src='img/colors/color2.png' title='' class='color')
+                        li
+                            img(src='img/colors/color3.png' title='' class='color')
+                    p Цвет:
+                        | &nbsp;
+                        span Черный
+                .col-md-2
+                    p.item-catalog--price $127
+                .col-md-10.col-lg-8
+                    form
+                        input(type='text' placeholder='Введите имя' required)
+                        input(type='mail' placeholder='E-mail' required)
+                        textarea(placeholder='Пожелаения. Например: Индивидуальный рисунок.')
+                        button(class='button' type='submit') Заказать
+
+                .col-md-5.hidden
+                    h2.white Спасибо за заказ
+                    p Наш менеджер свяжеться с вами в ближайшее время. Хорошего дня!
